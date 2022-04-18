@@ -1,8 +1,20 @@
-import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+
+
+//Komponentler gelecek
+import Navbar from './components/Navbar'
+
 
 function App() {
   return (
-  <h1>Portfolio Project</h1>
+    <div className="container-fluid">
+
+      <Navbar />
+      
+
+    </div>
 
   );
 }
