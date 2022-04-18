@@ -1,6 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import Header from './components/Header';
 
 
 //Komponentler gelecek
@@ -12,7 +13,7 @@ function App() {
     <div className="container-fluid">
 
       <Navbar />
-      
+      <Header />
 
     </div>
 

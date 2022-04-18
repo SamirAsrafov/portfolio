@@ -71,3 +71,60 @@ nav ul li{
       display: block;
   }
 }
+/* Header kodlari */
+.header-wrapper{
+  position: relative;
+  background: url(bg.avif);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.main-info{
+  position: absolute;
+  top: -250px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-info h1{
+  color: var(--primary-white);
+  text-align: center;
+  background: #000;
+}
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+  font-family: 'Inconsolata', monospace;
+  background: var(--primary-black);
+}
+
+@media(max-width: 768px){
+  .main-info h1{
+      font-size: 1.7rem !important;
+  }
+  .typed-text{
+      font-size: 1.7rem !important;
+  }
+}
+
+
+.downloadcv{
+  border: 1px solid var(--primary-white);
+  padding: .625rem;
+  margin: 4rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-white);
+  transition: .4s ease-in-out;
+}
+.downloadcv:hover{
+  text-decoration: none;
+  background: var(--primary-white);
+  color: var(--primary-black);
+  border: 1px solid var(--primary-black);
+}
