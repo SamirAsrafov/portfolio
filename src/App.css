@@ -94,9 +94,11 @@ nav ul li{
   color: var(--primary-white);
   text-align: center;
   background: #000;
+  padding: 5px;
 }
 .typed-text{
   font-size: 2rem;
+  padding: 5px;
   color: var(--primary-white);
   font-family: 'Inconsolata', monospace;
   background: var(--primary-black);
@@ -155,4 +157,79 @@ nav ul li{
     .p-text{
         text-align: justify;
     }
+}
+/* Services kodlari */
+.services{
+  text-align: center;
+  background: var(--primary-light-grey);
+  padding-bottom: 2rem;
+}
+.services h1{
+  text-transform: uppercase;
+}
+.services .circle{
+  position: relative;
+  margin: .0375rem auto;
+  background: var(--primary-orange);
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  transform: translateZ(1.5rem);
+}
+.services .circle .s-icon{
+  font-size: 1.4rem;
+  color: var(--primary-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.services .box h2{
+  margin-top: 2.1rem;
+}
+.services .box{
+  background: var(--primary-white);
+  border-bottom: .3125rem solid var(--primary-orange);
+  padding: .625rem;
+  margin-bottom: 1.875;
+  height: 310px;
+  position: relative;
+  
+}
+.box-front,
+.box-back{
+  border-radius: 1px;
+  padding: 1rem;
+  position: relative;
+transition:  all .9s ease-in-out ;
+transform-style: preserve-3d;
+box-shadow: 0 2rem 5rem -3.5rem rgba(0,0,0,0.15);
+}
+.box-front{
+  z-index: 10;
+  background: var(--primary-light-grey);
+  opacity: 1;
+}
+.box-back{
+  background: var(--primary-orange);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  transform: rotateY(-180deg);
+}
+.box-back .back-title{
+  color: var(--primary-white);
+  padding-top: 30px;
+}
+
+.services .box:hover > .box-back{
+ transform: rotateY(0deg);
+ z-index: 10;
+}
+.services .box:hover > .box-front{
+ transform: rotateY(180deg);
+ z-index: -1;
 }
