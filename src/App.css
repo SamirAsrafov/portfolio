@@ -317,3 +317,36 @@ box-shadow: 0 2rem 5rem -3.5rem rgba(0,0,0,0.15);
       width: 100%;
   }
 }
+/* ContactUs kodlari */
+.contacts{
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+.contacts h1{
+  color: var(--primary-hover-red);
+  padding: 1.3rem;
+  text-transform: uppercase;
+}
+.contacts p{
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+/* contacts input */
+.contacts input, .contacts textarea{
+  background: none;
+  border: none;
+  resize: none;
+  color:var(--primary);
+
+}
+.contacts input:focus, .contacts textarea:focus{
+  background: white;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+.contacts textarea{
+  height: 12.2rem;
+  /* !important - ust setre */
+} 
+.contact-btn{
+  margin: 1rem 0 0 0;    
+}
